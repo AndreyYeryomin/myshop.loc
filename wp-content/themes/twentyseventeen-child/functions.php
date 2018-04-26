@@ -30,11 +30,21 @@ function my_meta_box_details () {
 
 function my_slider_function ($attr)
 {
-    $posts = get_post($attr['id']);
+    $args = array(
+        'post_parent' => $attr['id'],
+    );
+    $images = get_children($args);
     ob_start();
-    $post_image_url = wp_get_attachment_image_src($posts->ID);
         ?>
-    <p><?php print_r($post_image_url) ?>/<?php echo $posts[0]->post_type; ?></p>
+   <div class="slick-slider">
+       
+        <?php foreach ($images as $image){?>
+                <div>
+                    <img src="<?php echo $image->guid;?>" alt="">
+                </div>    
+        
+        <?php } ?>
+   </div>
 <?php
     $output = ob_get_contents();
     ob_end_clean();
@@ -43,7 +53,20 @@ function my_slider_function ($attr)
 }
 
 add_shortcode('slider', 'my_slider_function');
-function foobar_func( $atts ){
-    return "foo and bar";
+
+
+
+function my_scripts_method() {
+    wp_deregister_script( 'jquery' );
+    wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', array(), NULL, true);
+    wp_enqueue_script( 'jquery' );
+    wp_register_script( 'lib-slick', get_stylesheet_directory_uri() . '/assets/js/slick.min.js', array('jquery'), NULL, true);
+    wp_enqueue_script('lib-slick');
+    wp_register_style('myStyleSheets', get_stylesheet_directory_uri() . '/assets/css/slick.css');
+    wp_enqueue_style( 'myStyleSheets');
+    wp_register_script( 'my-script', get_stylesheet_directory_uri() . '/assets/js/script.js', array('jquery', 'lib-slick'), NULL, true);
+    wp_enqueue_script( 'my-script' );
 }
-add_shortcode( 'foobar', 'foobar_func' );
+
+add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
+?>
