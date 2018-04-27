@@ -1,7 +1,10 @@
 <?php wp_head();?>
 <body>
+<div class="main">
 <?php
 echo do_shortcode('[slider id="23"]');
 ?>
-</body>
-<?php wp_footer();
+</div>
+<?php wp_footer();?>
+
+

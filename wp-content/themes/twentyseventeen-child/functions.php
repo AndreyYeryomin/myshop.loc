@@ -39,10 +39,14 @@ function my_slider_function ($attr)
    <div class="slick-slider">
        
         <?php foreach ($images as $image){?>
-                <div>
+    <div class="slider-block">
                     <img src="<?php echo $image->guid;?>" alt="">
-                </div>    
-        
+                   <div class="slider-text">
+                       <h1>Handmade bicycle</h1>
+                       <p>You <span>create</span> the <span>journey</span>, we supply the <span>parts</span></p>
+                           <a class="slider-button" href="#">SHOP BIKES</a>
+                   </div>
+    </div>
         <?php } ?>
    </div>
 <?php
@@ -62,8 +66,10 @@ function my_scripts_method() {
     wp_enqueue_script( 'jquery' );
     wp_register_script( 'lib-slick', get_stylesheet_directory_uri() . '/assets/js/slick.min.js', array('jquery'), NULL, true);
     wp_enqueue_script('lib-slick');
-    wp_register_style('myStyleSheets', get_stylesheet_directory_uri() . '/assets/css/slick.css');
-    wp_enqueue_style( 'myStyleSheets');
+    wp_register_style('css-slick', get_stylesheet_directory_uri() . '/assets/css/slick.css');
+    wp_enqueue_style( 'css-slick');
+    wp_register_style('css-slick-theme', get_stylesheet_directory_uri() . '/assets/css/slick-theme.css');
+    wp_enqueue_style( 'css-slick-theme');
     wp_register_script( 'my-script', get_stylesheet_directory_uri() . '/assets/js/script.js', array('jquery', 'lib-slick'), NULL, true);
     wp_enqueue_script( 'my-script' );
 }

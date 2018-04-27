@@ -122,30 +122,19 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
-
+    bottom: -26px;
     display: block;
-
     width: 100%;
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
-
-    text-align: center;
 }
 .slick-dots li
 {
-    position: relative;
-
-    display: inline-block;
-
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-
-    cursor: pointer;
+background: url("../img/slider_stick_01.png");
+    height: 2px;
+}
+.slick-dots li:hover
+{
+    background: url("../img/slider_stick_02_Active.png");
+    height: 4px;
 }
 .slick-dots li button
 {
@@ -154,8 +143,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 2px;
     padding: 5px;
 
     cursor: pointer;
@@ -169,6 +158,7 @@
 .slick-dots li button:focus
 {
     outline: none;
+
 }
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
@@ -185,10 +175,10 @@
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 2px;
 
-    content: '•';
+    content: '';
     text-align: center;
 
     opacity: .25;
@@ -201,4 +191,8 @@
 {
     opacity: .75;
     color: black;
+}
+.slick-dots li.slick-active{
+    background: url("../img/slider_stick_02_Active.png");
+    height: 4px;
 }

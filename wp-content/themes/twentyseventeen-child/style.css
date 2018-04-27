@@ -10,3 +10,102 @@ Version:        0.1.0
 
 
 @import url("../twentyseventeen/style.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+.main{
+    width: 100%;
+    max-width: 1920px;
+    font-family: 'Roboto' , sans-serif;
+}
+.slick-slider{
+    width: 100%;
+    height: 980px;
+    position: relative;
+}
+.slick-slider img{
+    width: 100%;
+    height: 100%;
+}
+.slick-slider div{
+    height: 100%;
+}
+.slider-block{
+    position: relative;
+}
+.slick-slider .slider-text{
+    position: absolute;
+    vertical-align: middle;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+}
+.slider-text h1{
+    font-family: Roboto;
+    color:  #ffffff;
+    font-size: 50px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 32.49px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleX(1.0001);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    text-transform: uppercase;
+}
+.slider-text p{
+    font-family: Roboto;
+    color:  #ffffff;
+    font-size: 28px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 32.49px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+
+}
+.slider-text p span{
+    font-family: Roboto;
+    color:  #fdff19;
+    font-size: 28px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 32.49px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleX(1.0001);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+.slider-button{
+    border-radius: 10px;
+    background-color:  #000000;
+    width: 124px;
+    height: 43px;
+    color:  #fdff19;
+    font-size: 12px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 32.49px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleX(1.0001);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    padding: 18px 27px 16px 27px;
+}
+
+.slick-next {
+    background: url("assets/img/RIGHT_BUTTON_LINK.png") no-repeat 100%;
+    width: 58px;
+    height: 58px;
+    right: 23px;
+    z-index: 1;
+
+}
+.slick-prev {
+    background: url("assets/img/LEFT_BUTTON_LINK.png") no-repeat 100%;
+    width: 58px;
+    height: 58px;
+    left: 23px;
+    z-index: 1;
+}
+.slick-next:hover,
+.slick-next:focus
+{
+    background: url("assets/img/RIGHT_BUTTON_ACTIVE.png") no-repeat 100%;
+}
+.slick-prev:hover,
+.slick-prev:focus
+{
+    background: url("assets/img/LEFT_BUTTON_ACTIVE.png") no-repeat 100%;
+}
+.slick-next:before,.slick-prev:before
+{
+    content: '';
+}
