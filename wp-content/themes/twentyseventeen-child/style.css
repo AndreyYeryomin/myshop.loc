@@ -16,6 +16,13 @@ Version:        0.1.0
     max-width: 1920px;
     font-family: 'Roboto' , sans-serif;
 }
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 50px;
+}
+/*SLIDER*/
 .slick-slider{
     width: 100%;
     height: 980px;
@@ -35,7 +42,7 @@ Version:        0.1.0
     position: absolute;
     vertical-align: middle;
     width: 100%;
-    top: 50%;
+    top: 407px;
     text-align: center;
 }
 .slider-text h1{
@@ -47,6 +54,7 @@ Version:        0.1.0
     text-align: center;
     transform: scaleX(1.0001);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
     text-transform: uppercase;
+    margin-bottom: 26px;
 }
 .slider-text p{
     font-family: Roboto;
@@ -55,6 +63,7 @@ Version:        0.1.0
     font-weight: 100;
     line-height: 32.49px;/* Приближение из-за подстановки шрифтов */
     text-align: center;
+    margin-bottom: 33px;
 
 }
 .slider-text p span{
@@ -108,4 +117,70 @@ Version:        0.1.0
 .slick-next:before,.slick-prev:before
 {
     content: '';
+}
+/*HEADER*/
+header{
+     position: absolute;
+     z-index: 1;
+     width: 100%;
+ }
+nav{
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin-top: 31px;
+}
+#menu-main-menu, .sub-menu{
+    list-style-type: none;
+}
+.sub-menu{
+    display: none;
+    position: absolute;
+    width: 220px;
+    background-color:  #fcff19;
+    margin-left: 0px;
+    border-radius: 0px 10px 10px;
+
+}
+.sub-menu li:hover{
+    width: 100%;
+    border-radius: 10px!important;
+}
+.sub-menu li{
+    width: 100%;
+    border-radius: 10px;
+}
+.logo{
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin-top: 20px;
+}
+#menu-main-menu li{
+    display: inline-block;
+
+}
+#menu-main-menu li a{
+    font-family: Roboto;
+    color:  #ffffff;
+    font-size: 15px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 32.49px;/* Приближение из-за подстановки шрифтов */
+    text-transform: uppercase;
+    padding: 13px 15px;
+}
+#menu-main-menu li:hover a{
+    font-family: Roboto;
+    color:  #010101;
+    font-size: 15px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 32.49px;/* Приближение из-за подстановки шрифтов */
+}
+#menu-main-menu li:hover{
+    background-color:  #fcff19;
+    border-radius: 10px 10px 0px 0px;
+}
+#menu-main-menu li:hover .sub-menu{
+    display: block;
+
 }
