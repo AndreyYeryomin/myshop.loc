@@ -264,4 +264,104 @@ nav{
 .category-item:hover .category-button{
     display: block;
 }
+/*product*/
+ul.products li.product {
+    width: 490px!important;
+}
+.list-product {
+    width: 100%;
+    padding: 0px 87px;
+}
+.product-item{
+    width: 30%!important;
+    display: inline-block;
+    margin-right: 79px;
+}
+.product-item:last-child{
+    margin-right: 0px;
+}
+.product-img{
+ width: 100%!important;
+}
+.name-box{
+    font-family: Roboto;
+    color:  #000000;
+    font-size: 15px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+.price-box{
+    font-family: Roboto;
+    color:  #000000;
+    font-size: 15px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+}
+.button-option{
+background: url("assets/img/BUTTON_bg copy 2.png");
+    font-family: Roboto;
+    color:  #000000;
+    font-size: 12px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    width: 144px;
+    height: 43px;
+    padding: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.button-buy{
+    border-radius: 10px;
+    background-color: #b7b7b7;
+    width: 94px;
+    height: 43px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 13px;
+    cursor: pointer;
+}
+.button-buy:hover{
+    color:  #fdff19;
+    background-color: black;
+}
+.button-box{
+    display: inline-block;
+    float: right;
+}
+.info-box{
+    display: inline-block;
+    float: left;
+}
+.button-box div{
+    display: inline-block;
+}
+.contact-block{
+    width: 100%;
+    background: url("assets/img/CONTACT_US_BG.png");
+}
+.contact-form{
+    width: 450px;
+    margin: 0 auto;
+}
+.contact-form input,.contact-form textarea{
+    width: 100%;
+    border-radius: 10px;
 
+}
+
+.contact-form input[type="text"]{
+    display: inline-block;
+    width: 47.3%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+#surname{
+    margin-right: 0px;
+}
+.contact-form input[type="submit"]{
+    background-color:  #b7b7b7;
+}

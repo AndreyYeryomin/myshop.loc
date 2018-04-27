@@ -36,8 +36,10 @@
 <div class="main">
 <?php
 echo do_shortcode('[slider id="23"]');
-if( is_front_page()){
+if(is_front_page()) {
     include('category.php');
+    include ('popular-product.php');
+    include ('contact.php');
 }
 ?>
 </div>
