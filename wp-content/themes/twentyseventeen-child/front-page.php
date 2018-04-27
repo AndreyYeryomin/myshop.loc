@@ -37,16 +37,7 @@
 <?php
 echo do_shortcode('[slider id="23"]');
 if( is_front_page()){
-$args = array(
-    'taxonomy'   => "product_cat",
-    'number'     => $number,
-    'orderby'    => $orderby,
-    'order'      => $order,
-    'hide_empty' => $hide_empty,
-    'include'    => $ids
-);
-$product_categories = get_terms($args);
-print_r($product_categories);
+    include('category.php');
 }
 ?>
 </div>

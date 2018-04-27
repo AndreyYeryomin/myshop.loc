@@ -10,11 +10,21 @@ Version:        0.1.0
 
 
 @import url("../twentyseventeen/style.css");
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,700');
 .main{
     width: 100%;
     max-width: 1920px;
     font-family: 'Roboto' , sans-serif;
+}
+h2{
+    font-family: Roboto;
+    color:  #000000;
+    font-size: 28px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 32.49px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    padding-top: 75px!important;
+    margin-bottom: 75px;
 }
 .container{
     max-width: 1200px;
@@ -184,3 +194,74 @@ nav{
     display: block;
 
 }
+/*CATEGORY*/
+.category-block{
+    max-width: 1920px;
+    width: 100%;
+    height: 628px;
+    background: url("assets/img/CATEGORIES_BG_IMAGE.jpg");
+}
+.category-item{
+    width: 346px;
+    height: 288px;
+    display: inline-block;
+    margin-right: 27px;
+    position: relative;
+}
+.category-item:last-child{
+    margin-right: 0px;
+}
+.category-text{
+    position: absolute;
+    width: 100%;
+    top: 142px;
+    text-align: center;
+}
+.category-text .category-name{
+    font-family: Roboto;
+    color:  #fcff19;
+    font-size: 15px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+}
+.category-text .category-description{
+    font-family: Roboto;
+    color:  #ffffff;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+}
+.category-text .category-button{
+    display: none;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    width: 123px;
+    margin: 0 auto;
+}
+.category-text .category-button a {
+    font-family: Roboto;
+    color: #ffffff;
+    padding: 20px 15px;
+    font-size: 12px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 32.49px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleX(1.0001); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+.overlay{
+    width: 346px;
+    height: 288px;
+    position: absolute;
+    background: url("assets/img/HOVER_FILTER.png");
+    opacity: .17;
+    display: none;
+}
+.category-item:hover .overlay{
+    display: block;
+}
+.category-item:hover .category-button{
+    display: block;
+}
+
