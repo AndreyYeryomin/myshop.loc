@@ -1,0 +1,8 @@
+@media screen and (max-width: 1440px){
+    .list-product {
+        padding: 0px 25px;
+    }
+    .product-item {
+        margin-right: 40px;
+    }
+}

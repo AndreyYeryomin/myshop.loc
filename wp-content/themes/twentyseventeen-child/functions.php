@@ -70,9 +70,16 @@ function my_scripts_method() {
     wp_enqueue_style( 'css-slick');
     wp_register_style('css-slick-theme', get_stylesheet_directory_uri() . '/assets/css/slick-theme.css');
     wp_enqueue_style( 'css-slick-theme');
+    wp_register_style('css-fontawesome', get_stylesheet_directory_uri() . '/assets/css/font-awesome.min.css');
+    wp_enqueue_style( 'css-fontawesome');
     wp_register_script( 'my-script', get_stylesheet_directory_uri() . '/assets/js/script.js', array('jquery', 'lib-slick'), NULL, true);
     wp_enqueue_script( 'my-script' );
 }
 
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
+
+register_nav_menus( array(
+    'primary' => __( 'Primary Navigation', 'twentyseventeen' ),
+    'secondary' => __('Secondary Navigation', 'twentyseventeen')
+) );
 ?>
