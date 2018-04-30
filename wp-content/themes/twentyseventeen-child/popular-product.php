@@ -26,3 +26,4 @@
   <?php } ?>
     </ul>
 </div>
+<?php /*echo do_shortcode("[products tag='popular' size='full']");*/?>
