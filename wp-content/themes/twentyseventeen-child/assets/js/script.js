@@ -5,6 +5,9 @@ $( document ).ready(function() {
       }
   );
 
+  $('.basket > a').text("");
+  $('.basket > a').append("<img src='wp-content/themes/twentyseventeen-child/assets/img/Basket_icon.png'>");
+
   length = 100 / $('.slick-dots > li').length;
   $('.slick-dots > li').css({'width':length + '%',"display":"inline-block"});
 

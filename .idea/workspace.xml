@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36d02baf-5d14-438d-aff2-baa8e013ba72" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/front-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/front-page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/img/Basket_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,8 +49,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state relative-caret-position="120">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -75,8 +76,8 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="72" column="107" selection-start-line="72" selection-start-column="107" selection-end-line="72" selection-end-column="107" />
+            <state relative-caret-position="550">
+              <caret line="72" column="41" lean-forward="true" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="108" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
               </folding>
@@ -96,8 +97,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="172" column="21" selection-start-line="172" selection-start-column="21" selection-end-line="172" selection-end-column="21" />
+            <state relative-caret-position="178">
+              <caret line="193" column="29" selection-start-line="193" selection-start-column="29" selection-end-line="193" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -146,11 +147,11 @@
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/contact.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/css/media.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/js/script.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/category.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/popular-product.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/front-page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/js/script.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/style.css" />
       </list>
     </option>
@@ -165,8 +166,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="263" />
-    <option name="y" value="46" />
+    <option name="x" value="235" />
+    <option name="y" value="297" />
     <option name="width" value="1615" />
     <option name="height" value="997" />
   </component>
@@ -288,9 +289,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/img" />
       <recent name="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets" />
       <recent name="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/css" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -318,15 +319,15 @@
       <workItem from="1524740602545" duration="5146000" />
       <workItem from="1524746793268" duration="12208000" />
       <workItem from="1524810503414" duration="33349000" />
-      <workItem from="1525070141001" duration="16544000" />
+      <workItem from="1525070141001" duration="18266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67247000" />
+    <option name="totallyTimeSpent" value="68969000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="263" y="46" width="1615" height="997" extended-state="0" />
+    <frame x="235" y="297" width="1615" height="997" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21176471" />
@@ -632,23 +633,6 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="72" column="107" selection-start-line="72" selection-start-column="107" selection-end-line="72" selection-end-column="107" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/css/media.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -670,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/front-page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -687,10 +664,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="72" column="41" lean-forward="true" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="108" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="172" column="21" selection-start-line="172" selection-start-column="21" selection-end-line="172" selection-end-column="21" />
+        <state relative-caret-position="178">
+          <caret line="193" column="29" selection-start-line="193" selection-start-column="29" selection-end-line="193" selection-end-column="29" />
         </state>
       </provider>
     </entry>
