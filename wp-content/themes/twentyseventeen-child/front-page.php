@@ -45,19 +45,6 @@ if(is_front_page()) {
 }
 ?>
 </div>
-    <footer>
-            <div class="container">
-
-            <div class="logo">
-                <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/logo_footer.png" alt=""></a>
-            </div>
-            <nav>
-                <?php wp_nav_menu(array( 'theme_location' => 'secondary' ) ); ?>
-            </nav>
-        </div>
-    </footer><!-- #colophon -->
-<?php wp_footer(); ?>
-</body>
-</html>
+    <?php get_footer();?>
 
 

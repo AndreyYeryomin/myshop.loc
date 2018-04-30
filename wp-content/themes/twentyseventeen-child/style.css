@@ -171,7 +171,6 @@ footer{
     width: 100%;
     background-color: #fcff19;
     overflow: hidden;
-    margin-top: -47px;
 }
 nav{
     display: inline-block;
@@ -411,10 +410,12 @@ background: url("assets/img/BUTTON_bg copy 2.png");
 .contact-block{
     width: 100%;
     background: url("assets/img/CONTACT_US_BG.png");
+    background-size: cover;
 }
 .contact-form{
     width: 450px;
     margin: 0 auto;
+    padding-bottom: 45px;
 }
 .contact-form input,.contact-form textarea{
     width: 100%;

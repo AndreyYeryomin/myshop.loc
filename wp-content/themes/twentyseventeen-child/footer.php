@@ -14,20 +14,18 @@
 
 ?>
 
-</div><!-- #content -->
 
-<footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="wrap">
-        <?php
-        get_template_part( 'template-parts/footer/footer', 'widgets' );
+<footer>
+    <div class="container">
 
-        get_template_part( 'template-parts/footer/site', 'info' );
-        ?>
-    </div><!-- .wrap -->
+        <div class="logo">
+            <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/logo_footer.png" alt=""></a>
+        </div>
+        <nav>
+            <?php wp_nav_menu(array( 'theme_location' => 'secondary' ) ); ?>
+        </nav>
+    </div>
 </footer><!-- #colophon -->
-</div><!-- .site-content-contain -->
-</div><!-- #page -->
 <?php wp_footer(); ?>
-
 </body>
 </html>
