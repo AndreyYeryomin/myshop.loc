@@ -24,7 +24,7 @@
                 </div>
                 <div class="button-box">
                     <div class="button-option">option</div>
-                    <a href="/?add-to-cart=48" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $post->ID;?>" data-product_sku="" aria-label="Add <?php echo $_product->get_name(); ?> to your cart" rel="nofollow"><div class="button-buy">buy</div></a>
+                    <a href="/?add-to-cart=<?php echo $post->ID;?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $post->ID;?>" data-product_sku="" aria-label="Add <?php echo $_product->get_name(); ?> to your cart" rel="nofollow"><div class="button-buy">buy</div></a>
                 </div>
             </div>
           </a>

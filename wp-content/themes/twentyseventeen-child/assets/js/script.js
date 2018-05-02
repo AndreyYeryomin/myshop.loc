@@ -5,6 +5,18 @@ $( document ).ready(function() {
       dots: true
       }
   );
+    $('.slider_related').slick({
+        slidesToShow: 2,
+        responsive: [
+            {
+                breakpoint: 550,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            },
+        ]
+    });
 
 
     $('.basket > a').text("");

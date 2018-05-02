@@ -37,19 +37,18 @@ function my_slider_function ($attr)
     ob_start();
         ?>
    <div class="slick-slider">
-       
         <?php foreach ($images as $image){?>
-    <div class="slider-block">
-                    <img src="<?php echo $image->guid;?>" alt="">
-                   <div class="slider-text">
-                       <h1>Handmade bicycle</h1>
-                       <p>You <span>create</span> the <span>journey</span>, we supply the <span>parts</span></p>
-                           <a class="slider-button" href="#">SHOP BIKES</a>
-                   </div>
-    </div>
+            <div class="slider-block">
+                <img src="<?php echo $image->guid;?>" alt="">
+                    <div class="slider-text">
+                        <h1>Handmade bicycle</h1>
+                        <p>You <span>create</span> the <span>journey</span>, we supply the <span>parts</span></p>
+                        <a class="slider-button" href="#">SHOP BIKES</a>
+                    </div>
+            </div>
         <?php } ?>
    </div>
-<?php
+    <?php
     $output = ob_get_contents();
     ob_end_clean();
     return $output;
