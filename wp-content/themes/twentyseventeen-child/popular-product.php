@@ -1,8 +1,12 @@
 <div class="list-product">
     <h2>POPULAR BIKE</h2>
     <ul class="popular-product">
-  <?php $agrs=array(
-          "post_type" =>'product'
+
+  <?php
+;
+  $agrs=array(
+            "post_type" =>'product',
+            'product_tag' 	 => 'popular'
   );
   $posts = get_posts($agrs);
   foreach ($posts as $post) {
@@ -19,11 +23,10 @@
             </div>
             <div class="button-box">
                 <div class="button-option">option</div>
-                <a href="<?php echo get_home_url(); ?>/?add-to-cart=<?php echo $post->ID;?>"><div class="button-buy">buy</div></a>
+                <a href="/?add-to-cart=48" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $post->ID;?>" data-product_sku="" aria-label="Add <?php echo $_product->get_name(); ?> to your cart" rel="nofollow"><div class="button-buy">buy</div></a>
             </div>
         </div>
       </li>
   <?php } ?>
     </ul>
 </div>
-<?php /*echo do_shortcode("[products tag='popular' size='full']");*/?>

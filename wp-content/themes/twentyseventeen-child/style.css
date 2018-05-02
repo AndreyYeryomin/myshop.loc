@@ -469,6 +469,23 @@ background: url("assets/img/BUTTON_bg copy 2.png");
     }
 
 }
+.added_to_cart{
+    border-radius: 10px;
+    background-color: #b7b7b7;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 14px 15px 15px 15px;
+}
+.added_to_cart:hover{
+    color: #fdff19;
+    background-color: black;
+}
 @media screen and (max-width: 1200px){
     .category-item {
         width: 100%;
