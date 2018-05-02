@@ -27,6 +27,9 @@ if ( $related_products ) : ?>
 		<h2><?php esc_html_e( 'Related products', 'woocommerce' ); ?></h2>
 
 		<?php woocommerce_product_loop_start();
+        global $wp;
+        $current_url = home_url( add_query_arg( array(), $wp->request ) );
+
 		?>
         <div class="slider_related">
 			<?php foreach ( $related_products as $related_product ) : ?>
@@ -41,7 +44,7 @@ if ( $related_products ) : ?>
                         </div>
                         <div class="button-box">
                             <div class="button-option">option</div>
-                            <a href="/?add-to-cart=<?php echo $related_product->id;?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $related_product->ID;?>" data-product_sku="" aria-label="Add <?php echo $related_product->get_name(); ?> to your cart" rel="nofollow"><div class="button-buy">buy</div></a>
+                            <a href="<?php echo  $current_url; ?>/?add-to-cart=<?php echo $related_product->id;?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $related_product->ID;?>" data-product_sku="" aria-label="Add <?php echo $related_product->get_name(); ?> to your cart" rel="nofollow"><div class="button-buy">buy</div></a>
                         </div>
                     </a>
                 </div>
