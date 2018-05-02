@@ -44,7 +44,7 @@ if ( $related_products ) : ?>
                         </div>
                         <div class="button-box">
                             <div class="button-option">option</div>
-                            <a href="<?php echo  $current_url; ?>/?add-to-cart=<?php echo $related_product->id;?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $related_product->ID;?>" data-product_sku="" aria-label="Add <?php echo $related_product->get_name(); ?> to your cart" rel="nofollow"><div class="button-buy">buy</div></a>
+                            <a href="<?php echo  $current_url; ?>/?add-to-cart=<?php echo $related_product->id;?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $related_product->id;?>" data-product_sku="" aria-label="Add <?php echo $related_product->get_name(); ?> to your cart" rel="nofollow"><div class="button-buy">buy</div></a>
                         </div>
                     </a>
                 </div>
