@@ -489,7 +489,7 @@ background: url("assets/img/BUTTON_bg copy 2.png");
     padding-right: 0px;
 }
 
-.single_product .woocommerce-breadcrumb {
+.woocommerce-breadcrumb {
     text-transform: uppercase;
     width: 100%;
     font-family: Roboto;
@@ -563,14 +563,18 @@ input[type="submit"]:hover{
     display: inline-block;
 }
  .single_product .tabs.wc-tabs{
-    list-style-type: none;
-    background-color: #b7b7b7;
-    font-family: Roboto;
+     list-style-type: none;
+     background-color: #b7b7b7;
+     font-family: Roboto;
+     width: 100%;
+     display: block;
+     float: left;
 }
 .single_product .tabs.wc-tabs li{
     display: inline-block;
     padding: 10px;
     margin-right: 0px;
+    float: left;
 }
 .single_product .tabs.wc-tabs li:hover{
     background-color: black;
@@ -756,6 +760,11 @@ input[type="submit"]:hover{
         width: 100%;
         vertical-align: top;
         margin-bottom: 30px;
+    }
+    .icon {
+        float: right;
+        margin-top: 25px;
+        right: 25px;
     }
     .single_product .woocommerce-product-gallery {
         display: inline-block;

@@ -22,6 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php get_header( 'shop' ); ?>
 <section class="single_product">
+
 <?php
 /**
  * woocommerce_before_main_content hook.
