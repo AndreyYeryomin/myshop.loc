@@ -62,7 +62,7 @@ add_shortcode('slider', 'my_slider_function');
 
 function my_scripts_method() {
     wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', array(), NULL, true);
+    wp_register_script( 'jquery', 'https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js', array(), NULL, true);
     wp_enqueue_script( 'jquery' );
     wp_register_script( 'lib-slick', get_stylesheet_directory_uri() . '/assets/js/slick.min.js', array('jquery'), NULL, true);
     wp_enqueue_script('lib-slick');
