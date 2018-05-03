@@ -22,6 +22,7 @@ $product_categories = get_terms($args); ?>
             $description = category_description( $cat->term_id );
 
         ?>
+            <a href="<?php echo get_category_link( $cat->term_id); ?>">
         <li>
             <div class="category-item">
                 <div class="overlay"></div>
@@ -34,12 +35,13 @@ $product_categories = get_terms($args); ?>
                         <?php echo $description; ?>
                     </div>
                     <div class="category-button">
-                        <a href="#">GO TO STORE</a>
+                       GO TO STORE
                     </div>
 
                 </div>
             </div>
         </li>
+            </a>
         <?php } ?>
         </ul>
     </div>
