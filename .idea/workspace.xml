@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36d02baf-5d14-438d-aff2-baa8e013ba72" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,8 +91,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="785">
-              <caret line="989" column="17" selection-start-line="989" selection-start-column="17" selection-end-line="989" selection-end-column="17" />
+            <state relative-caret-position="597">
+              <caret line="188" column="23" selection-start-line="188" selection-start-column="23" selection-end-line="188" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -382,12 +380,12 @@
       <workItem from="1524810503414" duration="33349000" />
       <workItem from="1525070141001" duration="28076000" />
       <workItem from="1525243423092" duration="29836000" />
-      <workItem from="1525330186140" duration="2964000" />
+      <workItem from="1525330186140" duration="3236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111579000" />
+    <option name="totallyTimeSpent" value="111851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="141" y="107" width="1657" height="1029" extended-state="0" />
@@ -728,8 +726,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen-child/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
-          <caret line="989" column="17" selection-start-line="989" selection-start-column="17" selection-end-line="989" selection-end-column="17" />
+        <state relative-caret-position="597">
+          <caret line="188" column="23" selection-start-line="188" selection-start-column="23" selection-end-line="188" selection-end-column="23" />
         </state>
       </provider>
     </entry>

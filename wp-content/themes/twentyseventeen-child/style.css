@@ -185,9 +185,8 @@ footer{
 header.header{
     width: 100%;
     background-color: black;
+    display: inline-block;
     position: relative;
-    display: block;
-    overflow: hidden;
 }
 nav{
     display: inline-block;
