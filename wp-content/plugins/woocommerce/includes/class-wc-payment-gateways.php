@@ -76,6 +76,7 @@ class WC_Payment_Gateways {
 			'WC_Gateway_Cheque',
 			'WC_Gateway_COD',
 			'WC_Gateway_Paypal',
+            'WC_Gateway_Your_Gateway',
 		);
 
 		/**

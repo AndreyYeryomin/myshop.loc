@@ -75,6 +75,32 @@ h1{
     margin: 0px auto;
     padding: 0px 48px;
 }
+.scroll-bar{
+    padding-top: 285px;
+
+}
+.scroll-bar svg{
+    position: absolute;
+    left: 50%;
+}
+.scroll-bar .svg2 path{
+    height: 0px;
+    fill: yellow;
+    z-index: 2;
+}
+.scroll-bar .svg2{
+    height: 0px;
+
+}
+@keyframes loadingbar{
+    from{
+        height: 0%;
+    }
+    to{
+        height: 77px;
+    }
+
+}
 /*SLIDER*/
 .slick-slider{
     width: 100%;
@@ -205,9 +231,6 @@ nav{
     margin-left: 0px;
     border-radius: 0px 10px 10px;
 
-}
-.basket a{
-    vertical-align: text-top;
 }
 .sub-menu li:hover{
     width: 100%;
@@ -639,6 +662,16 @@ input[type="submit"]:hover{
      display: inline-block;
      float:  right;
  }
+.orderby{
+    background: black;
+    color: white;
+    /* border: 2px solid white; */
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+
+}
 .category_wrap .product-item{
     width: 33.3% !important;
     float: left;
