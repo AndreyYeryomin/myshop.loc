@@ -710,8 +710,6 @@ input[type="submit"]:hover{
 a.button{
     border-radius: 10px;
     background-color: #b7b7b7;
-    width: 94px;
-    height: 43px;
     vertical-align: middle;
     text-align: center;
     font-family: Roboto;
@@ -721,7 +719,11 @@ a.button{
     text-transform: uppercase;
     cursor: pointer;
 }
-
+/*CHECKOUT*/
+.woocommerce{
+    max-width: 1200px;
+    margin: 20px auto;
+}
 @media screen and (max-width: 1440px){
     .list-product {
         padding: 0px 25px 34px 25px;

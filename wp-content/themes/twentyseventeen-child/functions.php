@@ -130,9 +130,9 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 
         public function __construct()
         {
-            $this->id = 'custom';
+            $this->id = 'stripe_subscription';
             $this->has_fields = true;
-            $this->order_button_text = __('Proceed to custom', 'woocommerce');
+            $this->order_button_text = __('Pay vai stripe', 'woocommerce');
             $this->method_title = __('CusTom', 'woocommerce');
             $this->method_description = sprintf(__('PayPal Standard sends customers to PayPal to enter their payment information. PayPal IPN requires fsockopen/cURL support to update order statuses after payment. Check the <a href="%s">system status</a> page for more details.', 'woocommerce'), admin_url('admin.php?page=wc-status'));
             $this->supports = array(
@@ -206,15 +206,30 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 
          function process_payment( $order_id ) {
 			    	$order = wc_get_order( $order_id );
+			    	$data = $order->get_data();
 			    	$stripe_token=$_POST['stripe_token'];
-			    	$amount=$order->get_total()*100;
-			    	\Stripe\Stripe::setApiKey("rk_test_Gkoz6igW0973J9TY97rMieGw");
-			    	\Stripe\Charge::create(array(
+                	$amount=$order->get_total()*100;
+			    	\Stripe\Stripe::setApiKey("sk_test_1OPsIvLVJxzYA4Zko6DFi4hJ");
+
+                     $customer = \Stripe\Customer::create(array(
+                         'source' => array(
+                             'token' => $stripe_token, // or something similar like 'card' => $stripe_token,
+                             'name' => $data['shipping']['first_name'],
+                                 'address_line1' =>
+                                'address_zip' => ''
+                            'address_state' =>
+),
+                         'email' => $data['billing']['email'],
+
+                     ));
+
+                     \Stripe\Charge::create(array(
 					  "amount" => $amount,
 					  "currency" => get_option('woocommerce_currency'),
-					  "customer" => $stripe_token,
+					  "customer" => $customer->id,
 					  "description" => "Charge for purchasing pruducts"
 					));
+
 			        $order->update_status( 'processing', __( 'Payment complete through stripe', 'wc-gateway-offline' ) );
 			        $order->reduce_order_stock();
 			        WC()->cart->empty_cart();
@@ -230,6 +245,23 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 
 
 }
+add_action( 'wp_enqueue_scripts', 'woo_stripe_script' );
+function stripe_script(){
+    if(is_checkout()){
+        wp_enqueue_script( 'woo-stripe-checkout', 'https://checkout.stripe.com/v2/checkout.js', false );
+    }
+}
+add_action('woocommerce_review_order_before_submit','woo_stripe_credential');
+		function woo_stripe_credential(){
+			global $woocommerce;
+			$total=$woocommerce->cart->get_cart_total();
+			$total=explode(get_woocommerce_currency_symbol(), $total);
+			$total_amount=explode(".", $total[1]);
+			$total=$total_amount[0].$total_amount[1];
+			?>
+			<input type="hidden" id="stripe_data" data-name="<?php echo get_bloginfo('name'); ?>" data-image="<?php echo get_site_icon_url(); ?>" name="stripe_data" data-currency="<?php echo get_option('woocommerce_currency'); ?>" data-amount="<?php echo $total; ?>" data-key="<?php echo "pk_test_rks5tmlTMfkU2SRpGG3LlaxR";?>">
+			<?php
+		}
 add_action( 'plugins_loaded', 'init_your_gateway_class' );
 
 ?>
